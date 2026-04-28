@@ -1,0 +1,31 @@
+﻿{
+  "api": {
+    "base_url": "https://api.deepseek.com/chat/completions",
+    "api_key": "",
+    "model_name": "deepseek-chat"
+  },
+  "scenario_title": "王掌柜审讯",
+  "scenario_background": "唐代长安夜市命案，需通过审讯锁定嫌疑人与动机。",
+  "npcs": [
+    {
+      "name": "王掌柜",
+      "personality": "圆滑谨慎，擅长转移话题",
+      "secret": "案发当夜为掩护账册问题篡改了时间线",
+      "background": "长安西市酒肆掌柜，常与商旅往来"
+    }
+  ],
+  "rag_clues": [
+    {
+      "id": "ledger",
+      "title": "账册缺页",
+      "content": "案发当夜账册有两页被撕下，缺失时段集中在亥时前后。",
+      "keywords": ["账册", "缺页", "亥时", "账目"]
+    },
+    {
+      "id": "witness",
+      "title": "更夫证词",
+      "content": "更夫称见王掌柜在案发后一刻仍在后巷，衣袖有潮湿水迹。",
+      "keywords": ["更夫", "后巷", "衣袖", "水迹"]
+    }
+  ]
+}
